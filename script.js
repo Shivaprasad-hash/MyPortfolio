@@ -38,3 +38,9 @@ skillsBtnSmall.onclick = () => {
     hambergerIcon.classList.remove("d-none");
     skillsSection.style.scrollMarginTop = "80px";
 }
+
+let aboutmeBtn = document.getElementById("aboutmeBtn");
+
+aboutmeBtn.onclick = () => {
+    aboutSection.style.scrollMarginTop = "80px";
+}
