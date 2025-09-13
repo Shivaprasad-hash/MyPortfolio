@@ -351,6 +351,7 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
+        
     }
     .skill_icons{
         height:80px;
@@ -376,8 +377,28 @@ body{
         padding:10px;
         margin:5px;
         height:125px;
+        display: flex;
+        flex-direction: column;
+        
     }
     .skill_names{
         margin-top: 5px;
+    }
+}
+
+@media (max-width: 405px){
+    .firstrow_skills{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        text-align: center;
+        color:#ffffff;
+        font-weight: bold;
+    }
+    .secrow_skills{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        text-align: center;
+        color:#ffffff;
+        font-weight: bold;
     }
 }
