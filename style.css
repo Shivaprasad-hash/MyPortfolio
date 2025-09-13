@@ -1,0 +1,380 @@
+body{
+    margin:0px;
+}
+@media (min-width: 768px){
+    .bg_cont{
+        background-image: url("images/homebackground.jpg");
+        height:100vh;
+        background-size: cover;
+    }
+    .nav_bar{
+        height:80px;
+        background-color: rgba(3, 19, 252,0.7);
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        color:#ffffff;
+        
+    }
+    header{
+        position: fixed;
+        width:100%;
+    }
+    #hambergerIcon{
+        display: none;
+    }
+    #crossIcon{
+        display: none;
+    }
+    .menu_items_0 a{
+        color:#ffffff;
+        font-weight: bold;
+    }
+    .greeting{
+        color: #bcf7ce;
+        font-size: 60px;
+    }
+    .name{
+        color:#e0fa82;
+    }
+    .profile_pic{
+        height:400px;
+        width:400px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid rgba(201, 204, 242);
+        box-shadow: 5px 5px 20px 10px rgba(201, 204, 242),
+                    -5px -5px 20px 10px rgba(201, 204, 242);
+    }
+    .home_cont{
+        height:100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .aboutme_btn{
+        background-color: #fcd1b3;
+        color:black;
+        font-weight: bold;
+        padding:15px;
+        border-width:0px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 10px rgba(201, 204, 242),
+                    -2px -2px 10px rgba(201, 204, 242);
+    }
+    .icons_cont{
+        justify-content: space-between;
+        margin-right: 150px;
+    }
+    .icons_cont i{
+        font-size: 35px;
+        
+        color:#ffd166
+    }
+
+    /**About me part**/
+    .bg_cont_1{
+        background-color: #3b334f;
+    }
+    .about_photo{
+        height:480px;
+        width:300px;
+        border-radius:50px;
+        box-shadow: 5px 5px 15px 5px rgba(250, 240, 215),
+                    -5px -5px 15px 5px rgba(250, 240, 215);
+    }
+    .profile_pic_small{
+        display: none;
+    }
+    .user_icon{
+        color:#f7e1ab;
+    }
+    .about_heading{
+        text-align: center;
+        color:#ffffff;
+        font-weight: bolder;
+        font-size: 45px;
+    }
+    .aboutme_main{
+        display:flex;
+        justify-content: space-evenly;
+        
+    }
+    .right_part_cont{
+        width:560px;
+    }
+    .right_part_cont h2{
+        font-weight: bold;
+        color:#fac73c;
+        font-size: 45px;
+    }
+    .designation{
+        color:#f5d378;
+        font-size: 20px;
+    }
+    .description, .email, .place{
+        color:#f5e5bc;
+        font-size: 20px;
+    }
+    .email_title, .place_title{
+        font-weight: 3px;
+        color:#fac73c;
+    }
+
+    /**Skills part**/
+    .skills_bg_cont{
+        background-color: #ad42f5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:30px;
+    }
+    .skillitems_bgcont{
+        background-color: rgba(213, 166, 245,0.3);
+        width:70%;
+        padding:20px;
+        border-radius:50px;  
+    }
+    .skills_heading{
+        text-align: center;
+        color:#ffffff;
+        font-weight: bolder;
+        font-size: 45px;
+        display:flex;
+        align-items: center;
+    }
+    .skill_heading_icon{
+        color:#f7e1ab;
+    }
+    .skill_conts{
+        background-color: rgba(81, 62, 94);
+        width:300px;
+        padding:25px;
+        border-radius: 20px;
+        height:150px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:5px;
+    }
+    .skill_icons{
+        height:80px;
+        width:90px;
+    }
+    .sql_icon{
+        background-color: rgba(249, 247, 250);
+        border-radius: 50%;
+    }
+    .firstrow_skills{
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .secrow_skills{
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .skillitems_bgcont{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill_names{
+        text-align: center;
+        font-weight: bold;
+        margin:5px;
+        color:#f5e5bc;
+    }
+    
+    
+}
+
+@media (max-width: 767px){
+    .bg_cont{
+        background-image: url("images/homebackground.jpg");
+        height:100vh;
+        background-size: cover;
+    }
+    .profile_pic{
+        display: none;
+    }
+    .menu_items_0{
+        display: none;
+    }
+    .nav_bar{
+        height:80px;
+        background-color: rgba(3, 19, 252,0.7);
+        color:#ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position:fixed;
+        width:100%;
+        z-index: 5000;
+    }
+    
+    .hamb_icon{
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .cross_icon{
+        font-size: 30px;
+        cursor: pointer;
+    }
+    #menuItems{
+        display: flex;
+        flex-direction: column;
+        background-color: antiquewhite;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        position:fixed;
+        top:80px;
+        width:100%;
+    }
+    #menuItems a{
+        color:black;
+        padding:10px;
+        font-weight: bold;
+    }
+    .greeting{
+        text-align: center;
+        color: #bcf7ce;
+    }
+    .name{
+        color:#e0fa82;
+    }
+    .home_cont{
+        display: flex;
+        height:100vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .aboutme_btn{
+        display: block;
+        margin: auto;
+        background-color: #fcd1b3;
+        color:black;
+        font-weight: bold;
+        padding:15px;
+        border-width:0px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 10px rgba(201, 204, 242),
+                    -2px -2px 10px rgba(201, 204, 242);
+    }
+    .icons_cont{
+        justify-content: space-evenly;
+    }
+    .icons_cont i{
+        font-size: 35px;
+        
+        color:#ffd166
+    }
+
+    /**About part**/
+    .bg_cont_1{
+        background-color: #3b334f;
+    }
+
+    .about_photo{
+        display: none;
+    }
+    .profile_pic_small{
+        height:300px;
+        width:300px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 5px 5px 15px 5px rgba(250, 240, 215),
+                    -5px -5px 15px 5px rgba(250, 240, 215);
+        
+    }
+    .left_part_cont{
+        display: flex;
+        justify-content: center;
+    }
+    .user_icon{
+        color:#f7e1ab;
+    }
+    .about_heading{
+        text-align: center;
+        color:#ffffff;
+        font-weight: bolder;
+        font-size: 45px;
+    }
+    .right_part_cont{
+        margin-top:20px;
+    }
+    .right_part_cont h2{
+        font-weight: bold;
+        color:#fac73c;
+        font-size: 40px;
+    }
+    .designation{
+        color:#f5d378;
+        font-size: 15px;
+    }
+    .description, .email, .place{
+        color:#f5e5bc;
+        font-size: 18px;
+    }
+    .email_title, .place_title{
+        color:#fac73c;
+    }
+
+    /**Skills part**/
+    .skills_heading{
+        text-align: center;
+        color:#ffffff;
+        font-weight: bolder;
+        font-size: 45px;
+        display:flex;
+        align-items: center;
+    }
+    .skill_heading_icon{
+        color:#f7e1ab;
+    }
+    .skills_bg_cont{
+        background-color: #ad42f5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:30px;
+    }
+    .skillitems_bgcont{
+        background-color: rgba(213, 166, 245,0.3);
+        width:70%;
+        padding:20px;
+        border-radius:30px;  
+    }
+    .skill_icons{
+        height:80px;
+        width:90px;
+    }
+    .firstrow_skills{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        text-align: center;
+        color:#ffffff;
+        font-weight: bold;
+    }
+    .secrow_skills{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        text-align: center;
+        color:#ffffff;
+        font-weight: bold;
+    }
+    .skill_conts{
+        background-color: rgba(81, 62, 94);
+        border-radius: 15px;
+        padding:10px;
+        margin:5px;
+        height:125px;
+    }
+    .skill_names{
+        margin-top: 5px;
+    }
+}
