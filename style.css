@@ -864,8 +864,10 @@ body{
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
         position:absolute;
+        top:80px;
         right:0;
-        width:50%;
+        width:100%;
+        transition: top 0.3s;
     }
     #menuItems a{
         color:black;
