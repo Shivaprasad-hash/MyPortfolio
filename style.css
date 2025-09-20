@@ -1,6 +1,9 @@
 body{
     margin:0px;
 }
+*{
+    font-family: Roboto;
+}
 
 @media (min-width: 951px){
     .bg_cont{
@@ -18,7 +21,7 @@ body{
         
     }
     header{
-        position: fixed;
+        
         width:100%;
     }
     #hambergerIcon{
@@ -44,11 +47,10 @@ body{
         border-radius: 50%;
         object-fit: cover;
         border: 5px solid rgba(201, 204, 242);
-        box-shadow: 5px 5px 20px 10px rgba(201, 204, 242),
-                    -5px -5px 20px 10px rgba(201, 204, 242);
+        
     }
     .home_cont{
-        height:100vh;
+        height:80vh;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -60,8 +62,8 @@ body{
         padding:15px;
         border-width:0px;
         border-radius: 20px;
-        box-shadow: 2px 2px 10px rgba(201, 204, 242),
-                    -2px -2px 10px rgba(201, 204, 242);
+        box-shadow: 2px 2px 5px rgba(201, 204, 242),
+                    -2px -2px 5px rgba(201, 204, 242);
     }
     .icons_cont{
         justify-content: space-between;
@@ -82,20 +84,26 @@ body{
         height:480px;
         width:300px;
         border-radius:50px;
-        box-shadow: 5px 5px 15px 5px rgba(250, 240, 215),
-                    -5px -5px 15px 5px rgba(250, 240, 215);
+        border:3px solid #f0dba3;
     }
     .profile_pic_small{
         display: none;
     }
     .user_icon{
         color:#f7e1ab;
+        margin-right: 10px;
     }
     .about_heading{
         text-align: center;
         color:#ffffff;
         font-weight: bolder;
-        font-size: 45px;
+        
+    }
+    .about_heading h2{
+        font-size: 40px;
+    }
+    .about_heading i{
+        font-size: 40px;
     }
     .aboutme_main{
         display:flex;
@@ -108,7 +116,7 @@ body{
     .right_part_cont h2{
         font-weight: bold;
         color:#fac73c;
-        font-size: 45px;
+        font-size: 35px;
     }
     .designation{
         color:#f5d378;
@@ -116,7 +124,7 @@ body{
     }
     .description, .email, .place{
         color:#f5e5bc;
-        font-size: 20px;
+        font-size: 18px;
     }
     .email_title, .place_title{
         font-weight: 3px;
@@ -151,6 +159,7 @@ body{
     }
     .skill_heading_icon{
         color:#f7e1ab;
+        font-size: 30px;
     }
     .skill_conts{
         background-color: rgba(81, 62, 94);
@@ -206,9 +215,15 @@ body{
     .edu_heading_cont{
         color:#ffffff;
         font-weight: bolder;
-        font-size: 45px;
+        
         display:flex;
         align-items: center;
+    }
+    .edu_heading_cont h2{
+        font-size: 35px;
+    }
+    .edu_heading_cont i{
+        font-size: 30px;
     }
     .edu_icon{
         color:#f7e1ab;
@@ -249,15 +264,22 @@ body{
     }
     .edu_heading{
         font-weight: bold;
+        font-size:25px;
     }
 
     /**Projects sec**/
     .projects_heading_cont{
         color:#ffffff;
-        font-weight: bolder;
+        font-weight: bold;
         font-size: 45px;
         align-items: center;
         text-align: center;
+    }
+    .projects_heading_cont h2{
+        font-size: 35px;
+    }
+    .projects_heading_cont i{
+        font-size: 30px;
     }
     .projects_bg_cont{
         background-color: #827455;
@@ -319,9 +341,15 @@ body{
     .cont_heading_cont{
         color:#ffffff;
         font-weight: bolder;
-        font-size: 45px;
+        
         align-items: center;
         text-align: center;
+    }
+    .cont_heading_cont h2{
+        font-size: 40px;
+    }
+    .cont_heading_cont i{
+        font-size: 30px;
     }
     .contact_card_cont{
         display:flex;
@@ -338,6 +366,12 @@ body{
         width:90%;
         height:50px;
         border-radius:5px;
+    }
+    input::placeholder{
+        padding-left: 10px;
+    }
+    textarea::placeholder{
+        padding-left: 10px;
     }
     .contact_inputs:focus{
         outline: none;
@@ -385,13 +419,13 @@ body{
         display: none;
     }
     .nav_bar{
-        height:80px;
+        height:70px;
         background-color: rgba(3, 19, 252,0.7);
         color:#ffffff;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        position:fixed;
+        
         width:100%;
         z-index: 5000;
     }
@@ -411,9 +445,12 @@ body{
         background-color: antiquewhite;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
-        position:fixed;
-        top:80px;
-        width:100%;
+        position:absolute;
+        right:0;
+        height:80%;
+        overflow: auto;
+        width:50%;
+        z-index: 1000;
     }
     #menuItems a{
         color:black;
@@ -423,16 +460,21 @@ body{
     .greeting{
         text-align: center;
         color: #bcf7ce;
+        padding-top: 50%;
+        font-size: 40px;
+        width:100%;
     }
     .name{
         color:#e0fa82;
     }
     .home_cont{
         display: flex;
-        height:100vh;
+        height:50vh;
         align-items: center;
         justify-content: center;
+        position: relative;
     }
+    
     .aboutme_btn{
         display: block;
         margin: auto;
@@ -442,18 +484,20 @@ body{
         padding:15px;
         border-width:0px;
         border-radius: 20px;
-        box-shadow: 2px 2px 10px rgba(201, 204, 242),
-                    -2px -2px 10px rgba(201, 204, 242);
+        box-shadow: 2px 2px 10px rgba(201, 204, 242,0.6),
+                    -2px -2px 10px rgba(201, 204, 242,0.6);
+        font-size: 15px;
     }
     .icons_cont{
         justify-content: space-evenly;
         margin-right: 0px;
+        padding-bottom: 50px;
     }
     .icons_cont i{
-        font-size: 35px;
-        
+        font-size: 30px;
         color:#ffd166
     }
+    
 
     /**About part**/
     .bg_cont_1{
@@ -472,8 +516,7 @@ body{
         width:300px;
         border-radius: 50%;
         object-fit: cover;
-        box-shadow: 5px 5px 15px 5px rgba(250, 240, 215),
-                    -5px -5px 15px 5px rgba(250, 240, 215);
+        border:2px solid #f0dba3;
         
     }
     .left_part_cont{
@@ -482,12 +525,13 @@ body{
     }
     .user_icon{
         color:#f7e1ab;
+        font-size:30px;
     }
     .about_heading{
         text-align: center;
         color:#ffffff;
         font-weight: bolder;
-        font-size: 45px;
+        font-size: 40px;
     }
     .right_part_cont{
         margin-top:20px;
@@ -520,6 +564,7 @@ body{
     }
     .skill_heading_icon{
         color:#f7e1ab;
+        font-size: 30px;
     }
     .skills_bg_cont{
         background-color: #311345;
@@ -587,6 +632,7 @@ body{
     }
     .edu_icon{
         color:#f7e1ab;
+        font-size:30px;
     }
     
     .edu_bg_cont{
@@ -632,9 +678,11 @@ body{
         align-items: center;
         text-align: center;
     }
+    .proj_icon{
+        font-size:30px;
+    }
     .projects_bg_cont{
         background-color: #827455;
-        scroll-margin-top: 80px;
     }
     .proj_card{
         background-color: #cfbd95;
@@ -682,21 +730,27 @@ body{
     .certificate_bg_cont{
         background-color: #3d4526;
     }
+    .certi_icon{
+        font-size:30px;
+    }
 
     /**contact sec**/
     .contact_bg_cont{
         background-color: #1f1d44;
         height:100%;
         padding-bottom:40px;
-        scroll-margin-top: 80px;
     }
     .cont_heading_cont{
         color:#ffffff;
-        font-weight: bolder;
+        font-weight: bold;
         font-size: 45px;
         align-items: center;
         text-align: center;
     }
+    .cont_icon{
+        font-size: 30px;
+    }
+    
     .contact_card_cont{
         display:flex;
         flex-direction: column;
@@ -705,7 +759,7 @@ body{
         padding:20px;
         background-color: rgba(118, 122, 121,0.5);
         margin:auto;
-        width:30%;
+        width:80%;
         border-radius: 15px;
     }
     .contact_inputs{
@@ -733,7 +787,7 @@ body{
     /**footer**/
     .footer_sec{
         display:flex;
-        
+        flex-direction: column;
         background-color: #222423;
         color:#ecf2a7;
         padding:40px;
@@ -742,21 +796,15 @@ body{
     .links_cont{
         list-style-type:circle;
     }
-    .left_part{
-        width:33.3%;
-    }
+    
     .left_part p{
         color:#fff;
     }
     .right_part p{
         color:#fff;
     }
-    .middle_part{
-        width:33.3%;
-    }
-    .right_part{
-        width:33.3%;
-    }
+    
+    
     .links_cont li a{
         color:#fff
     }
@@ -781,13 +829,16 @@ body{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        position:fixed;
+        
         width:100%;
         z-index: 5000;
     }
+    .nav_bar h1{
+        font-size: 30px;
+    }
     
     .hamb_icon{
-        font-size: 30px;
+        font-size: 25px;
         cursor: pointer;
         display: inline;
     }
@@ -801,9 +852,9 @@ body{
         background-color: antiquewhite;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
-        position:fixed;
-        top:80px;
-        width:100%;
+        position:absolute;
+        right:0;
+        width:50%;
     }
     #menuItems a{
         color:black;
@@ -819,7 +870,7 @@ body{
     }
     .home_cont{
         display: flex;
-        height:100vh;
+        height:80vh;
         align-items: center;
         justify-content: center;
     }
@@ -862,8 +913,7 @@ body{
         width:300px;
         border-radius: 50%;
         object-fit: cover;
-        box-shadow: 5px 5px 15px 5px rgba(250, 240, 215),
-                    -5px -5px 15px 5px rgba(250, 240, 215);
+        border:2px solid #f0dba3;
         
     }
     .left_part_cont{
@@ -872,13 +922,16 @@ body{
     }
     .user_icon{
         color:#f7e1ab;
+        font-size: 30px;
     }
     .about_heading{
         text-align: center;
         color:#ffffff;
-        font-weight: bolder;
-        font-size: 45px;
+        font-weight: bold;
+       
+       
     }
+    
     .right_part_cont{
         margin-top:20px;
     }
@@ -910,6 +963,7 @@ body{
     }
     .skill_heading_icon{
         color:#f7e1ab;
+        font-size: 30px;
     }
     .skills_bg_cont{
         background-color: #311345;
@@ -929,21 +983,21 @@ body{
         
     }
     .skill_icons{
-        min-height:60px;
-        height:80px;
-        min-width:70px;
-        width:90px;
+        min-height:40px;
+        height:60px;
+        min-width:50px;
+        width:70px;
     }
     .firstrow_skills{
         display: grid;
-        grid-template-columns: repeat(1, 1fr); 
+        grid-template-columns: repeat(2, 1fr); 
         text-align: center;
         color:#ffffff;
         font-weight: bold;
     }
     .secrow_skills{
         display: grid;
-        grid-template-columns: repeat(1, 1fr); 
+        grid-template-columns: repeat(2, 1fr); 
         text-align: center;
         color:#ffffff;
         font-weight: bold;
@@ -972,6 +1026,7 @@ body{
     }
     .edu_icon{
         color:#f7e1ab;
+        font-size:30px;
     }
     
     .edu_bg_cont{
@@ -1005,6 +1060,10 @@ body{
     }
     .edu_heading{
         font-weight: bold;
+        font-size:25px;
+    }
+    .education_heading{
+        font-size: 30px;
     }
 
     /**Projects sec**/
@@ -1015,9 +1074,16 @@ body{
         align-items: center;
         text-align: center;
     }
+    .proj_icon{
+        font-size: 30px;
+    }
+    .proj_heading{
+        font-size: 30px;
+        font-weight: bold;
+    }
     .projects_bg_cont{
         background-color: #827455;
-        scroll-margin-top: 80px;
+
     }
     .proj_card{
         background-color: #cfbd95;
@@ -1062,13 +1128,15 @@ body{
     .certificate_bg_cont{
         background-color: #3d4526;
     }
+    .certi_icon{
+        font-size: 30px;
+    }
 
     /**contact sec**/
     .contact_bg_cont{
         background-color: #1f1d44;
         height:100%;
         padding-bottom:40px;
-        scroll-margin-top: 80px;
     }
     .cont_heading_cont{
         color:#ffffff;
@@ -1076,6 +1144,9 @@ body{
         font-size: 45px;
         align-items: center;
         text-align: center;
+    }
+    .cont_icon{
+        font-size:30px;
     }
     .contact_card_cont{
         display:flex;
@@ -1085,7 +1156,7 @@ body{
         padding:20px;
         background-color: rgba(118, 122, 121,0.5);
         margin:auto;
-        width:60%;
+        width:80%;
         border-radius: 15px;
     }
     .contact_inputs{

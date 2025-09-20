@@ -27,7 +27,7 @@ aboutBtnSmall.onclick = () => {
     menuItems.classList.toggle("d-none");
     crossIcon.classList.add("d-none");
     hambergerIcon.classList.remove("d-none");
-    aboutSection.style.scrollMarginTop = "80px";
+    
 }
 let skillsBtnSmall = document.getElementById("skillsBtnSmall");
 let skillsSection = document.getElementById("skillsSection");
@@ -36,7 +36,7 @@ skillsBtnSmall.onclick = () => {
     menuItems.classList.toggle("d-none");
     crossIcon.classList.add("d-none");
     hambergerIcon.classList.remove("d-none");
-    skillsSection.style.scrollMarginTop = "80px";
+    
 }
 
 let projSection = document.getElementById("projSection");
@@ -46,7 +46,6 @@ projectsBtnSmall.onclick = () => {
     menuItems.classList.toggle("d-none");
     crossIcon.classList.add("d-none");
     hambergerIcon.classList.remove("d-none");
-    projSection.style.scrollMarginTop = "80px";
 }
 
 let eduSection = document.getElementById("eduSection");
@@ -56,7 +55,6 @@ eduBtnSmall.onclick = () => {
     menuItems.classList.toggle("d-none");
     crossIcon.classList.add("d-none");
     hambergerIcon.classList.remove("d-none");
-    eduSection.style.scrollMarginTop = "80px";
 }
 
 let certifiSection = document.getElementById("certifiSection");
@@ -66,7 +64,6 @@ certifiBtnSmall.onclick = () => {
     menuItems.classList.toggle("d-none");
     crossIcon.classList.add("d-none");
     hambergerIcon.classList.remove("d-none");
-    certifiSection.style.scrollMarginTop = "80px";
 }
 
 let contactSection = document.getElementById("contactSection");
@@ -76,5 +73,4 @@ contBtnSmall.onclick = () => {
     menuItems.classList.toggle("d-none");
     crossIcon.classList.add("d-none");
     hambergerIcon.classList.remove("d-none");
-    contactSection.style.scrollMarginTop = "80px";
 }
