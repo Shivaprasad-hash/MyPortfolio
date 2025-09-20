@@ -74,3 +74,21 @@ contBtnSmall.onclick = () => {
     crossIcon.classList.add("d-none");
     hambergerIcon.classList.remove("d-none");
 }
+
+//Navbar
+let lastScroll = 0;
+let navBar = document.getElementById("navBar");
+
+window.addEventListener('scroll',() => {
+    let currentScroll = window.scrollY;
+
+    if(currentScroll > lastScroll){
+        navBar.style.top = "-80px";
+        menuItems.style.top = "-50%";
+    }else{
+        navBar.style.top = "0px";
+        menuItems.style.top = "70px";
+    }
+
+    lastScroll = currentScroll;
+})
